@@ -1,0 +1,52 @@
+/* The animation code */
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.colorCardItem{
+  animation-name: fade-in;
+  animation-duration: 1s;
+  transition: all 0.5s;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.toolbar {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  color: #000;
+  align-content: center;
+  min-height: 100px;
+  flex-wrap: nowrap;
+  gap: 0px;
+  padding: 0px;
+  justify-items: center;
+}
+
+.buttonsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 50px;
+  width: 100%;
+}
+
+.colorText {
+  padding-left: 10px;
+  height: 50px;
+  color: #fff;
+}
+
+.actionButton {
+  /* width: 50px; */
+  height: 100%;
+  width: 100%;
+}
+
+.actionButton:active {
+  transform: none;
+}

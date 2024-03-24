@@ -1,0 +1,156 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "plugin:react/recommended",
+      "airbnb",
+      "next",
+      "airbnb-typescript",
+      "next/core-web-vitals"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "project": "tsconfig.json",
+      "tsconfigRootDir": "."
+  },
+  "plugins": [
+      "react",
+      "@typescript-eslint"
+  ],
+  "rules": {
+      "@typescript-eslint/lines-between-class-members": "off",
+      "react/jsx-key": "off",
+      "react/require-default-props": "off",
+      "import/prefer-default-export": "off",
+      "import/no-anonymous-default-export": "off",
+      "react/display-name": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/no-unstable-nested-components": "off",
+      "max-classes-per-file": "off",
+      "import/no-extraneous-dependencies": "off",
+      "@next/next/no-img-element": "off",
+      "react/function-component-definition": [
+        2,
+        {
+          "namedComponents": "arrow-function"
+      }
+    ],
+    "react/prop-types": "off",
+    "eol-last": "error",
+    "linebreak-style": "error",
+    "no-trailing-spaces": "error",
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 1,
+          "maxBOF": 1
+        }
+      ],
+      "react/jsx-props-no-multi-spaces": "error",
+      "react/jsx-indent": [
+        2,
+        2,
+        {
+          "checkAttributes": true
+        }
+      ],
+      "react/jsx-indent-props": [
+        2,
+        2
+      ],
+      "react/jsx-closing-bracket-location": "error",
+      "react/jsx-wrap-multilines": [
+        "error",
+        {
+          "declaration": "parens-new-line",
+          "assignment": "parens-new-line",
+          "return": "parens-new-line",
+          "arrow": "parens-new-line",
+          "condition": "parens-new-line",
+          "logical": "parens-new-line",
+          "prop": "parens-new-line"
+      }
+    ],
+    "react/jsx-one-expression-per-line": [
+      "error",
+      {
+        "allow": "literal"
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": {
+          "minProperties": 4,
+          "multiline": true,
+          "consistent": true
+        },
+        "ObjectPattern": {
+          "minProperties": 4,
+          "multiline": true,
+          "consistent": true
+        },
+        "ImportDeclaration": {
+          "minProperties": 4,
+          "multiline": true,
+          "consistent": true
+        },
+        "ExportDeclaration": {
+          "minProperties": 4,
+          "multiline": true,
+          "consistent": true
+        }
+      }
+    ],
+    "object-property-newline": [
+      "error",
+      {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
+    "max-len": [
+      "error",
+      100,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-unneeded-ternary": "error",
+    "arrow-body-style": "error",
+    "jsx-quotes": "error",
+    "no-multi-spaces": "error",
+    "react/jsx-first-prop-new-line": "error",
+      "react/jsx-max-props-per-line": [
+        1,
+        {
+          "when": "multiline"
+        }
+      ],
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "error",
+      "no-restricted-imports": [
+        "error",
+        {
+          "name": "lodash",
+          "message": "Import individual methods from the Lodash module"
+      }
+    ]
+  }
+}

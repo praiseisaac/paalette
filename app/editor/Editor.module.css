@@ -1,0 +1,9 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  flex-wrap: nowrap;
+  position: relative;
+  gap: 0px;
+}

@@ -1,0 +1,46 @@
+/* The animation code */
+@keyframes fade-in {
+  from {
+    filter: blur(1.5rem);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
+.title {
+  font-size: 150px;
+  transition: all 1s;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation-name: fade-in;
+  animation-duration: 3s;
+}
+
+.exploreIndicator {
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 90px;
+  }
+}

@@ -1,0 +1,21 @@
+FROM --platform=linux/amd64 node:16-slim as base
+
+ARG NODE_ENV=development
+ARG APP_ENV
+ARG NEXT_PUBLIC_APP_ENV=$APP_ENV
+ENV NODE_ENV=$NODE_ENV
+ENV NEXT_PUBLIC_APP_ENV=$NEXT_PUBLIC_APP_ENV
+
+WORKDIR /app
+EXPOSE 3002
+COPY ["./package*.json", "./yarn.lock", "/app/"]
+
+RUN yarn install
+COPY . ./app
+
+CMD yarn dev
+
+# FROM base AS release
+# RUN npm run build
+
+# CMD npm start
