@@ -6,6 +6,9 @@ const nextConfig = {
   basePath: "/paalette",
   output: "export",
   reactStrictMode: false,
+  images: {
+    unoptimized: true,
+  },
 }
 
 module.exports = nextConfig
