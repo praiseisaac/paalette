@@ -3,6 +3,8 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  basePath: "/paalette",
+  output: "export",
   reactStrictMode: false,
 }
 
